@@ -8,7 +8,6 @@ from google.genai import types
 # PRO TIP: Use an environment variable for security: os.environ.get("GOOGLE_API_KEY")
 API_KEY = os.environ.get("GOOGLE_API_KEY")
 
-# "AIzaSyAyWSzpjCqlFaXJJJoZgIaJcX15WuamhWo" 
 client = genai.Client(api_key=API_KEY)
 
 # 2. Configure Grounding
