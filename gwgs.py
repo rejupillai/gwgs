@@ -1,11 +1,14 @@
 import json
+import os
 import requests
 from google import genai
 from google.genai import types
 
 # 1. Setup Client
 # PRO TIP: Use an environment variable for security: os.environ.get("GOOGLE_API_KEY")
-API_KEY = "AIzaSyAyWSzpjCqlFaXJJJoZgIaJcX15WuamhWo" 
+API_KEY = os.environ.get("GOOGLE_API_KEY")
+
+# "AIzaSyAyWSzpjCqlFaXJJJoZgIaJcX15WuamhWo" 
 client = genai.Client(api_key=API_KEY)
 
 # 2. Configure Grounding
