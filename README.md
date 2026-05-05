@@ -44,11 +44,11 @@ export GOOGLE_API_KEY="your_actual_api_key_here"
 ```
 
 ▶️ Running the Application
-Once your environment is set up and your API key is exported, 
+
 5. Launch the UI from your terminal:
 
 ```bash
-export GOOGLE_API_KEY="your_actual_api_key_here"
+streamlit run app.py
 ```
 
 Streamlit will spin up a local server and automatically open the application in your default web browser (typically at http://localhost:8501).
