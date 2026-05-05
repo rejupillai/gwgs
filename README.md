@@ -20,30 +20,39 @@ Before you begin, ensure you have the following installed on your machine:
 
 ## 🛠️ Installation & Setup
 
-**1. Clone the repository (or create the project folder)**
+1. Clone the repository (or create the project folder)
 ```bash
 mkdir gemini-grounding-app
 cd gemini-grounding-app
-
+```
 2. Create and activate a virtual environment (Recommended)
 
+```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
+```
 3. Install the required dependencies
+```bash
 pip install streamlit google-genai
-
+```
 🔑 Environment Variables
-The google-genai SDK automatically looks for your API key in the environment variables. You must set GOOGLE_API_KEY before running the application.
+The google-genai SDK automatically looks for your API key in the environment variables. 
 
+4. You must set GOOGLE_API_KEY before running the application.
+```bash
 export GOOGLE_API_KEY="your_actual_api_key_here"
+```
 
 ▶️ Running the Application
-Once your environment is set up and your API key is exported, you can launch the UI from your terminal:
+Once your environment is set up and your API key is exported, 
+5. Launch the UI from your terminal:
 
-streamlit run app.py
+```bash
+export GOOGLE_API_KEY="your_actual_api_key_here"
+```
 
 Streamlit will spin up a local server and automatically open the application in your default web browser (typically at http://localhost:8501).
 
-##  Sample response
-![Sample Response](sample-response.png)
+## Sample response
+
+![Sample Response](./sample-response.png)
